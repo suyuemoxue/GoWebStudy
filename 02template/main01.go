@@ -14,7 +14,7 @@ type UserInfo struct {
 
 func sayHello(writer http.ResponseWriter, request *http.Request) {
 	//解析模板
-	t, err := template.ParseFiles("03template/hello.gohtml")
+	t, err := template.ParseFiles("02template/hello.gohtml")
 	if err != nil {
 		fmt.Println(err)
 		return
